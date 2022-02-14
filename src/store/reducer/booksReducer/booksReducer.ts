@@ -13,7 +13,7 @@ export const booksReducer = (state = initialState, action: BooksAction):UserStat
         case UserActionTypes.FETCH_BOOKS:
             return {...state, books: [...state.books, ...action.payload.items]}
         case UserActionTypes.SPLICE_BOOKS:
-            return {...state, books: state.books.splice(0, 0) }
+            return {...state, books: []}
         case UserActionTypes.CURRENT_PAGE_INC:
             return {...state, currentPage: state.currentPage + action.payload}
         case UserActionTypes.CURRENT_PAGE_RESET:
