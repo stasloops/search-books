@@ -1,0 +1,60 @@
+.books{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    &__inner{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    &__item{
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__card{
+        width: 80%;
+        height: 350px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(211, 209, 209);
+        overflow: hidden;
+        transform: translate(10%,0);
+        cursor: pointer;
+    }
+    &__img{
+        width: 50%;
+        height: 175px;
+        transform: translate(45%, 0);
+    }
+    &__categories{
+        color: rgb(252, 252, 252);
+        font-weight: 300;
+        
+    }
+    &__title{
+        color: rgb(8, 8, 8);
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__authors{
+        color: rgb(163, 163, 163);
+        font-weight: 400;
+    }
+    &__more{
+        padding: 10px 30px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(125, 226, 24);
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin: auto;
+        cursor: pointer;
+    }
+}
+
